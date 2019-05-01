@@ -363,3 +363,7 @@ func (p *Pagination) setValues(params url.Values) url.Values {
 
 	return params
 }
+
+func (c *Client) GetAccessToken() string {
+	return c.config.AccessToken
+}
